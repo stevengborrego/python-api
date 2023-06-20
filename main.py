@@ -31,7 +31,6 @@ def api_call(endpoint=None, query=None):
 
     if endpoint is None or query is None:
         raise InvalidSearch
-    #
     url = f'https://api.themoviedb.org/3/{endpoint}'
     params = {'api_key': os.getenv('API_KEY'), 'query': query}
 
